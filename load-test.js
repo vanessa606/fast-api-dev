@@ -11,12 +11,12 @@ export const options = {
 
 export default function () {
   // Vista 1: Endpoint raíz (ejemplo)
-  const res1 = http.get('https://tu-api-en-produccion.com/');
+  const res1 = http.get('https://github.com/vanessa606/fast-api-dev/blob/main/');
   check(res1, { 'status was 200': (r) => r.status === 200 });
   sleep(1);
 
   // Vista 2: Endpoint de datos (ajusta la ruta según tu app)
-  const res2 = http.get('https://tu-api-en-produccion.com/items');
+  const res2 = http.get('https://github.com/vanessa606/fast-api-dev/blob/main');
   check(res2, { 'status was 200': (r) => r.status === 200 });
   sleep(1);
 }
